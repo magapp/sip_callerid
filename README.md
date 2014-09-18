@@ -14,7 +14,9 @@ Most of the time it is good to use a virtualenv. Type something like this:
 	env/bin/python sip_callerid.py --server asterisk.domain.com --number 0812345678 --authname 0812345678 --password secret --execute 'echo CALLERID is calling'
 
 sip_callerid will now register itself to asterisk.domain.com and for example print the text below on incoming phone calls:
+
 	0887654321 is calling
+
 
 Usage
 =====
