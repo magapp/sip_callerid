@@ -26,6 +26,8 @@ You can for example trigg a Jenkins job that do some caller id lookup and other 
 
 	... --execute 'curl "https://jenkins.domain.com/buildByToken/buildWithParameters/?job=callerid&token=abc&cause=sip_callerid&FROM_NUMBER=CALLERID"'
 
+Note that sometimes the port is not released correct on exit. I don't know exaclty why. If that happens, just run a tool like "iptstate" and remove all sockets in TIME_WAIT on port 5060.
+
 Todo
 ===
 Add arguements so the program can become a daemon. You can always execute in background by appending &.
